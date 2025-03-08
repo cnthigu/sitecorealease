@@ -1,0 +1,135 @@
+﻿@model List<ConquerSite.Models.MiningModels>
+
+@{
+    ViewData["Title"] = "Mining Lives";
+    int itemsPerPage = 10;
+    int totalPages = (int)Math.Ceiling((double)Model.Count / itemsPerPage);
+    int currentPage = 1;
+}
+
+<div class="mining-container">
+    <div class="mining-content">
+        <h1 class="mining-title">Live<span> Mining</span> 🗡️</h1>
+
+        <div class="mining-filters">
+            <input type="text" id="searchPlayer" class="filter-input" placeholder="🔍 Buscar Jogador">
+            <input type="text" id="searchItem" class="filter-input" placeholder="🗡️ Buscar Item">
+            <button id="btnClear" class="btn-clear">❌ Limpar Filtros</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table class="mining-table">
+                <thead>
+                    <tr>
+                        <th>👤 Jogador</th>
+                        <th>🗡️ Item</th>
+                        <th>💰 Mineração</th>
+                    </tr>
+                </thead>
+                <tbody id="itemTableBody">
+                    @foreach (var item in Model.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage))
+                    {
+                        <tr class="mining-item">
+                            <td>
+                                <img src="~/images/avatar/001.jpg" alt="Avatar" class="avatar-img" />
+                                @item.player_name
+                            </td>
+                            <td>@item.item_name</td>
+                            <td>@item.mined_at.ToString("dd/MM/yyyy HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="mining-pagination">
+                <button id="prevPage" class="mining-pagination-btn">← Anterior</button>
+                <span id="currentPage">Página @currentPage de @totalPages</span>
+                <button id="nextPage" class="mining-pagination-btn">Próxima →</button>
+            </div>
+        </div>
+
+        <p class="mining-item-count">Exibindo <span id="itemCount">@Model.Count</span> itens</p>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentPage = 1;
+            const itemsPerPage = 10;
+            const totalItems = @Model.Count;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            const prevPageButton = document.getElementById('prevPage');
+            const nextPageButton = document.getElementById('nextPage');
+            const currentPageSpan = document.getElementById('currentPage');
+            const tableBody = document.getElementById('itemTableBody');
+            const itemCountSpan = document.getElementById('itemCount');
+
+            const searchPlayer = document.getElementById('searchPlayer');
+            const searchItem = document.getElementById('searchItem');
+            const btnClear = document.getElementById('btnClear');
+
+            function updatePage() {
+                tableBody.innerHTML = '';
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+                const filteredItems = @Html.Raw(Json.Serialize(Model))
+                    .filter(item => item.player_name.toLowerCase().includes(searchPlayer.value.toLowerCase()) && item.item_name.toLowerCase().includes(searchItem.value.toLowerCase()))
+                    .slice(startIndex, endIndex);
+
+                filteredItems.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.className = 'mining-item';
+                    row.innerHTML = `
+                        <td>
+                            <img src="~/images/avatar/001.jpg" alt="Avatar" class="avatar-img" />
+                            ${item.player_name}
+                        </td>
+                        <td>${item.item_name}</td>
+                        <td>${new Date(item.mined_at).toLocaleString()}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                currentPageSpan.textContent = `Página ${currentPage} de ${totalPages}`;
+                prevPageButton.disabled = currentPage === 1;
+                nextPageButton.disabled = currentPage === totalPages;
+                itemCountSpan.textContent = filteredItems.length;
+            }
+
+            prevPageButton.addEventListener('click', function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updatePage();
+                }
+            });
+
+            nextPageButton.addEventListener('click', function () {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updatePage();
+                }
+            });
+
+            searchPlayer.addEventListener('input', updatePage);
+            searchItem.addEventListener('input', updatePage);
+
+            btnClear.addEventListener('click', function () {
+                searchPlayer.value = '';
+                searchItem.value = '';
+                updatePage();
+            });
+
+            updatePage();
+
+            var avatars = document.querySelectorAll('.avatar-img');
+            avatars.forEach(function (img) {
+                var randomNumber = Math.floor(Math.random() * 174) + 1;
+                var formattedNumber = ("000" + randomNumber).slice(-3);
+                img.src = "/images/avatar/" + formattedNumber + ".jpg";
+            });
+        });
+    </script>
+}
+

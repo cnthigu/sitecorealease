@@ -1,0 +1,189 @@
+﻿@model List<ConquerSite.Models.MarketItem>
+
+@{
+    ViewData["Title"] = "Market";
+}
+
+<div class="market-container">
+    <div class="market-content">
+        <div class="market-left">
+            <h2 class="market-title">Live<span> Market</span>💎</h2>
+
+            <div class="market-filters">
+                <input type="text" id="searchPlayer" class="filter-input" placeholder="🔍 Search Player">
+                <input type="text" id="searchItem" class="filter-input" placeholder="🗡️ Search Item">
+                <input type="number" id="searchPrice" class="filter-input" placeholder="💰 Search Price">
+                <button id="clearFilters" class="btn-clear">Clear Filters</button>
+            </div>
+
+            <div class="table-container">
+                <table class="market-table">
+                    <thead>
+                        <tr>
+                            <th>👤 Player</th>
+                            <th>🗡️ Item</th>
+                            <th>💎 Price</th>
+                            <th>📅 Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="marketItems">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="market-item">
+                                <td>
+                                    <img src="~/images/avatar/001.jpg" alt="Avatar" class="avatar-img" />
+                                    @item.PlayerName
+                                </td>
+                                <td>@item.ItemName</td>
+                                <td>@item.Price.ToString("#,0") Cps</td>
+                                <td>@item.Timestamp.ToString("dd/MM/yyyy HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="pagination" class="pagination"></div>
+
+            <p class="item-count">Showing <span id="itemCount">@Model.Count</span> items</p>
+        </div>
+
+        <div class="market-right">
+            <h3 class="market-sidebar-title">MARKET</h3>
+            <img src="~/images/transferir.png" alt="Market Preview" class="market-image">
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            // Avatar randomization
+            var avatars = document.querySelectorAll('.avatar-img');
+            avatars.forEach(function(img) {
+                var randomNumber = Math.floor(Math.random() * 174) + 1;
+                var formattedNumber = ("000" + randomNumber).slice(-3);
+                img.src = "/images/avatar/" + formattedNumber + ".jpg";
+            });
+
+            // Pagination
+            var rowsPerPage = 10;
+            var currentPage = 1;
+            var tableBody = document.querySelector('#marketItems');
+            var rows = Array.from(tableBody.querySelectorAll('tr'));
+            var totalPages = Math.ceil(rows.length / rowsPerPage);
+
+            function showPage(page) {
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+
+                var start = (page - 1) * rowsPerPage;
+                var end = start + rowsPerPage;
+                rows.slice(start, end).forEach(function(row) {
+                    row.style.display = '';
+                });
+            }
+
+            function renderPagination() {
+                var paginationContainer = document.getElementById('pagination');
+                paginationContainer.innerHTML = '';
+
+                var prevBtn = createPaginationButton('Previous', currentPage > 1, function() {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        showPage(currentPage);
+                        renderPagination();
+                    }
+                });
+                paginationContainer.appendChild(prevBtn);
+
+                for (var i = 1; i <= totalPages; i++) {
+                    var pageBtn = createPaginationButton(i.toString(), i !== currentPage, function(page) {
+                        return function() {
+                            currentPage = page;
+                            showPage(currentPage);
+                            renderPagination();
+                        };
+                    }(i));
+                    paginationContainer.appendChild(pageBtn);
+                }
+
+                var nextBtn = createPaginationButton('Next', currentPage < totalPages, function() {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        showPage(currentPage);
+                        renderPagination();
+                    }
+                });
+                paginationContainer.appendChild(nextBtn);
+            }
+
+            function createPaginationButton(text, enabled, onClick) {
+                var button = document.createElement('button');
+                button.textContent = text;
+                button.className = 'pagination-button';
+                button.disabled = !enabled;
+                if (enabled) {
+                    button.addEventListener('click', onClick);
+                }
+                return button;
+            }
+
+            showPage(currentPage);
+            renderPagination();
+
+            // Filtering
+            function filterItems() {
+                var playerSearch = document.getElementById('searchPlayer').value.toLowerCase();
+                var itemSearch = document.getElementById('searchItem').value.toLowerCase();
+                var priceSearch = document.getElementById('searchPrice').value;
+
+                rows.forEach(function(row) {
+                    var playerName = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+                    var itemName = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+                    var itemPrice = row.querySelector('td:nth-child(3)').textContent.replace(' Cps', '').replace(',', '');
+                    var showRow = true;
+
+                    // Verificando se as buscas de texto são compatíveis
+                    if (playerSearch && !playerName.includes(playerSearch)) {
+                        showRow = false;
+                    }
+
+                    if (itemSearch && !itemName.includes(itemSearch)) {
+                        showRow = false;
+                    }
+
+                    if (priceSearch && parseInt(itemPrice) < parseInt(priceSearch)) {
+                        showRow = false;
+                    }
+
+                    row.style.display = showRow ? '' : 'none';
+                });
+
+                var visibleRows = rows.filter(function(row) {
+                    return row.style.display !== 'none';
+                });
+
+                document.getElementById('itemCount').textContent = visibleRows.length;
+
+                totalPages = Math.ceil(visibleRows.length / rowsPerPage);
+                currentPage = 1;
+                showPage(currentPage);
+                renderPagination();
+            }
+
+            var searchInputs = document.querySelectorAll('.filter-input');
+            searchInputs.forEach(function(input) {
+                input.addEventListener('input', filterItems);
+            });
+
+            document.getElementById('clearFilters').addEventListener('click', function () {
+                document.getElementById('searchPlayer').value = '';
+                document.getElementById('searchItem').value = '';
+                document.getElementById('searchPrice').value = '';
+                filterItems();
+            });
+        });
+    </script>
+}

@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero" style="background-image: url('/images/pngegg.png'); background-repeat: no-repeat; background-position: bottom right; background-size: 600px;">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome to <span class="highlight">OrigensCO</span></h1>
+        <p class="hero-description">    
+            The classic Conquer Online experience is back! Dive into a world full of epic PvP battles, guild wars, and limitless possibilities
+        </p>
+        <div class="cta-container">
+            <a href="@Url.Action("Register", "Registro")" class="cta-button cta-primary">
+                Play Now
+            </a>
+            <a href="@Url.Action("Index", "Download")" class="cta-button cta-secondary">
+                Download
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Play OrigensCO Classic?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚔️</div>
+                <h3>Epic Battles</h3>
+                <p>Trojan Players FB/SS.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏰</div>
+                <h3>GWs</h3>
+                <p>Form alliances and rise to power with your fellow warriors.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>Rich Economy</h3>
+                <p>Trade and build your wealth in a player-driven economy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+

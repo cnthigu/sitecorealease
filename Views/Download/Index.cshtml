@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Download";
+}
+
+<div class="download-container">
+    <div class="download-content">
+        <h1 class="download-title">Download <span>OrigensCO</span></h1>
+        <p class="download-subtitle">Ready for battle!</p>
+
+        <div class="download-buttons">
+            <a href="https://mega.nz/file/XM83VYbL#7JPD-eyiGQGw55w9oO7EuXBJgBf2r1vdvO0378-P1dk" class="btn-download full">
+                <i class="bi bi-download"></i> Full Client  
+                <span class="btn-bg"></span>
+            </a>
+            <!-- Novo botão para o link direto do servidor -->
+            <a href="https://origensco.com/downloads/InstallerOrigensCO.exe" class="btn-download direct">
+                <i class="bi bi-server"></i> Direct Server
+                <span class="btn-bg"></span>
+            </a>
+            <a href="https://www.mediafire.com/file/5130op533hu0ieb/InstallerOrigensCO.exe/file" class="btn-download update">
+                <i class="bi bi-arrow-repeat"></i> Update Only
+                <span class="btn-bg"></span>
+            </a>
+        </div>
+
+        <div class="system-requirements">
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>OS:</strong> Windows 7/8/10</li>
+                <li><strong>Processor:</strong> Intel Core i3 or equivalent</li>
+                <li><strong>Memory:</strong> 4 GB RAM</li>
+                <li><strong>Graphics:</strong> DirectX 11 compatible</li>
+                <li><strong>Storage:</strong> 5 GB available space</li>
+            </ul>
+        </div>
+
+        <div class="back-home">
+            <a href="@Url.Action("Index", "Home")" class="btn-back">
+                <i class="bi bi-house-door"></i>  Back
+                <span class="btn-bg"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn-download, .btn-back');
+
+            buttons.forEach(button => {
+                button.addEventListener('mousemove', function(e) {
+                    const rect = button.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    button.style.setProperty('--mouse-x', `${x}px`);
+                    button.style.setProperty('--mouse-y', `${y}px`);
+                });
+            });
+        });
+    </script>
+}
+
