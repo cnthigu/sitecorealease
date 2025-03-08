@@ -42,6 +42,9 @@ Para uma visão prática da implementação e evolução do projeto, confira os 
 
 📌 **Versão 4.0.0** - [Vídeo Demonstrativo](https://youtu.be/72jCJgFOeQk)&#x20;
 
+📌 **Versão Realase** - [Video Realese](https://origensco.com/)&#x20;
+
+
 ---
 
 ## Como Executar o Projeto
