@@ -85,7 +85,7 @@
       ]
     },
     {
-      "Route": "css/site.59xy4mj2mc.css",
+      "Route": "css/site.9zhrmlz98m.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53685"
+          "Value": "61889"
         },
         {
           "Name": "Content-Type",
@@ -107,21 +107,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY=\""
+          "Value": "\"O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 06:58:31 GMT"
+          "Value": "Sun, 09 Mar 2025 16:53:42 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "59xy4mj2mc"
+          "Value": "9zhrmlz98m"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY="
+          "Value": "sha256-O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U="
         },
         {
           "Name": "label",
@@ -144,7 +144,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53685"
+          "Value": "61889"
         },
         {
           "Name": "Content-Type",
@@ -152,17 +152,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY=\""
+          "Value": "\"O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 06:58:31 GMT"
+          "Value": "Sun, 09 Mar 2025 16:53:42 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY="
+          "Value": "sha256-O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U="
         }
       ]
     },
@@ -15009,6 +15009,88 @@
       ]
     },
     {
+      "Route": "images/origenscovertical.etugp4vcbq.png",
+      "AssetFile": "images/origenscovertical.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 21:11:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "etugp4vcbq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw="
+        },
+        {
+          "Name": "label",
+          "Value": "images/origenscovertical.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/origenscovertical.png",
+      "AssetFile": "images/origenscovertical.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 21:11:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw="
+        }
+      ]
+    },
+    {
       "Route": "images/transferir.fenbcts2tu.png",
       "AssetFile": "images/transferir.png",
       "Selectors": [],
@@ -15087,6 +15169,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-yVTovAzgiFOMrGsAizzbS72aWLNsyAROsFlUwLD6IMg="
+        }
+      ]
+    },
+    {
+      "Route": "images/wallpaperflare.com_wallpaper.7z5x06jbow.jpg",
+      "AssetFile": "images/wallpaperflare.com_wallpaper.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:19:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7z5x06jbow"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/wallpaperflare.com_wallpaper.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/wallpaperflare.com_wallpaper.jpg",
+      "AssetFile": "images/wallpaperflare.com_wallpaper.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:19:20 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA="
+        }
+      ]
+    },
+    {
+      "Route": "images/wp12976406-conquer-online-wallpapers.jpg",
+      "AssetFile": "images/wp12976406-conquer-online-wallpapers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:17:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI="
+        }
+      ]
+    },
+    {
+      "Route": "images/wp12976406-conquer-online-wallpapers.tbv4ts86zr.jpg",
+      "AssetFile": "images/wp12976406-conquer-online-wallpapers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:17:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tbv4ts86zr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/wp12976406-conquer-online-wallpapers.jpg"
         }
       ]
     },

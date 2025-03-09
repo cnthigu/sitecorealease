@@ -9,10 +9,9 @@ namespace ConquerSite.Controllers
 {
     public class PagamentoController : Controller
     {
-        private readonly string PIX_URL = "";
-        private readonly string PIX_KEY = "";
-        private readonly string PIX_TOKEN = "";
-
+        private readonly string PIX_URL = "https://api.asaas.com/";
+        private readonly string PIX_KEY = "cf81309a-6c84-4325-a4c5-de2b3f7dcdcf";
+        private readonly string PIX_TOKEN = "$aact_MzkwODA2MWY2OGM3MWRlMDU2NWM3MzJlNzZmNGZhZGY6OmM0NWRiOWY5LWUzMGYtNGYxYS04OWQ0LTQ1MTM2Y2JmYTM3MDo6JGFhY2hfMGE2ZmZiNzgtM2Y4NS00MTIzLTkxYmQtNGExNDg5ODc2ODk3";
 
         public IActionResult Index()
         {

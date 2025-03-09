@@ -733,8 +733,20 @@
       "PackagePath": "staticwebassets\\images\\origensco.png"
     },
     {
+      "Id": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\origenscovertical.png",
+      "PackagePath": "staticwebassets\\images\\origenscovertical.png"
+    },
+    {
       "Id": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\transferir.png",
       "PackagePath": "staticwebassets\\images\\transferir.png"
+    },
+    {
+      "Id": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wallpaperflare.com_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\images\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wp12976406-conquer-online-wallpapers.jpg",
+      "PackagePath": "staticwebassets\\images\\wp12976406-conquer-online-wallpapers.jpg"
     },
     {
       "Id": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\js\\site.js",

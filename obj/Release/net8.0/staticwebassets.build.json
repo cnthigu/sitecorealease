@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gALEzy/n9iivuonspeFS2CTf05tFKzvE639ql+jdbqs=",
+  "Hash": "1uPYCIlIruTFbVW2wLM1z5ErXuZACkb26v9LhbDcfS8=",
   "Source": "ConquerSite",
   "BasePath": "_content/ConquerSite",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "59xy4mj2mc",
-      "Integrity": "2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY=",
+      "Fingerprint": "9zhrmlz98m",
+      "Integrity": "O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -3881,6 +3881,27 @@
       "OriginalItemSpec": "wwwroot\\images\\origensco.png"
     },
     {
+      "Identity": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\origenscovertical.png",
+      "SourceId": "ConquerSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\",
+      "BasePath": "_content/ConquerSite",
+      "RelativePath": "images/origenscovertical#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "etugp4vcbq",
+      "Integrity": "/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\origenscovertical.png"
+    },
+    {
       "Identity": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\transferir.png",
       "SourceId": "ConquerSite",
       "SourceType": "Discovered",
@@ -3900,6 +3921,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\transferir.png"
+    },
+    {
+      "Identity": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wallpaperflare.com_wallpaper.jpg",
+      "SourceId": "ConquerSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\",
+      "BasePath": "_content/ConquerSite",
+      "RelativePath": "images/wallpaperflare.com_wallpaper#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7z5x06jbow",
+      "Integrity": "fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wp12976406-conquer-online-wallpapers.jpg",
+      "SourceId": "ConquerSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\",
+      "BasePath": "_content/ConquerSite",
+      "RelativePath": "images/wp12976406-conquer-online-wallpapers#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tbv4ts86zr",
+      "Integrity": "Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\wp12976406-conquer-online-wallpapers.jpg"
     },
     {
       "Identity": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\js\\site.js",
@@ -5307,7 +5370,7 @@
       ]
     },
     {
-      "Route": "css/site.59xy4mj2mc.css",
+      "Route": "css/site.9zhrmlz98m.css",
       "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5317,7 +5380,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53685"
+          "Value": "61889"
         },
         {
           "Name": "Content-Type",
@@ -5325,11 +5388,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY=\""
+          "Value": "\"O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 06:58:31 GMT"
+          "Value": "Sun, 09 Mar 2025 16:53:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5339,7 +5402,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "59xy4mj2mc"
+          "Value": "9zhrmlz98m"
         },
         {
           "Name": "label",
@@ -5347,7 +5410,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY="
+          "Value": "sha256-O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U="
         }
       ]
     },
@@ -5362,7 +5425,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53685"
+          "Value": "61889"
         },
         {
           "Name": "Content-Type",
@@ -5370,11 +5433,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY=\""
+          "Value": "\"O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 06:58:31 GMT"
+          "Value": "Sun, 09 Mar 2025 16:53:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5384,7 +5447,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2Sha80dy1k9ux6R3hTfX6e2p/SqmHmxUHnZDnMSeZdY="
+          "Value": "sha256-O7Ipa8GVqAqn7lt1dMNACqL4oO2mtx5uUGqxTk09Y4U="
         }
       ]
     },
@@ -20231,6 +20294,88 @@
       ]
     },
     {
+      "Route": "images/origenscovertical.etugp4vcbq.png",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\origenscovertical.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 21:11:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "etugp4vcbq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/origenscovertical.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw="
+        }
+      ]
+    },
+    {
+      "Route": "images/origenscovertical.png",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\origenscovertical.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 21:11:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/sZ32jrk3zKyT3nf2o1DOcoQ6gfItErfNGUXO+WkSfw="
+        }
+      ]
+    },
+    {
       "Route": "images/transferir.fenbcts2tu.png",
       "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\transferir.png",
       "Selectors": [],
@@ -20309,6 +20454,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-yVTovAzgiFOMrGsAizzbS72aWLNsyAROsFlUwLD6IMg="
+        }
+      ]
+    },
+    {
+      "Route": "images/wallpaperflare.com_wallpaper.7z5x06jbow.jpg",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wallpaperflare.com_wallpaper.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:19:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7z5x06jbow"
+        },
+        {
+          "Name": "label",
+          "Value": "images/wallpaperflare.com_wallpaper.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA="
+        }
+      ]
+    },
+    {
+      "Route": "images/wallpaperflare.com_wallpaper.jpg",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wallpaperflare.com_wallpaper.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:19:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZt1IJ7PbweTZ38rN3w76ACg3HfxN3RrznlzBViiHPA="
+        }
+      ]
+    },
+    {
+      "Route": "images/wp12976406-conquer-online-wallpapers.jpg",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wp12976406-conquer-online-wallpapers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:17:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI="
+        }
+      ]
+    },
+    {
+      "Route": "images/wp12976406-conquer-online-wallpapers.tbv4ts86zr.jpg",
+      "AssetFile": "C:\\Users\\HIGORV\\source\\repos\\ConquerSite\\ConquerSite\\wwwroot\\images\\wp12976406-conquer-online-wallpapers.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:17:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tbv4ts86zr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/wp12976406-conquer-online-wallpapers.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z1tefHEWVx+3QvGYivw9tUVPlKCDMevYmec2Uj6iXiI="
         }
       ]
     },
